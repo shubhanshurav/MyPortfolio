@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Diplomata+SC&family=Poppins:wght@400;500;600;700&family=Titan+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   text-align: center;
+   /* background-image: url(/img/back.jpg);  */
+   background-color: rgba(0, 0, 0, 0.598);
+   background-repeat: no-repeat;
+   background-position: cover;
+}
+
+/* create Home & Navbar section */
+
+.container{
+   width:80vw;
+   margin:40px auto;
+   height:100vh;
+   background-repeat: no-repeat;
+   background-position:top;
+}
+
+.sec-1{
+    display: flex;
+    width:80vw;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mynav{
+   width: 100vw;
+   position: sticky;
+   top: 0;
+   background-size: cover;
+   background-color: crimson;
+   opacity: 0.73;
+}
+
+.nav{
+  height: 100%;
+  width: 100vw;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.main{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main ul{
+    width: 100vw;
+    text-align: center;
+    list-style: none;
+    padding: 12px;
+}
+
+.main ul li{
+   display: inline-block;
+}
+.main ul li a{
+    width: 25vw;
+    font-size: 16px;
+    padding: 29px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main ul li a:hover{
+    color:#000000;
+     font-weight: bold;
+}
+
+.left{
+   width: 40vw;
+   height: 80vh;
+   font-family:cursive;
+}
+
+.myname{
+    margin: 55px auto; 
+    padding: 30px; 
+    float: right; 
+}
+
+.myname h1{
+    font-size: 33px;
+    color: crimson;
+    text-align: center;
+}
+
+.myname h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.myname h3{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.myname button{
+    border-radius: 39px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 7px;
+    margin: 18px;
+    font-family: cursive;
+    background-color:crimson;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.myname button a{
+    color: black;
+    text-decoration: none;
+}
+
+.myname button a:hover{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.myname button:hover{
+    background-color:rgb(231, 237, 243);
+}
+
+.right{
+    width: 40vw;
+    height: 100vh;
+    padding-top: 30px;
+    /* background-color: rgb(201, 9, 9); */
+ }
+
+
+.mypic{
+    margin: 0 auto;
+
+}
+
+.mypic img{
+    height: 400px;                    
+    align-items: center;
+    border-radius: 18px;   
+    /* border: 6px solid crimson; */
+}
+
+/* start certificate section */
+
+.sec-3{
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 215vh;
+    background-color: rgba(0,0,0,0.7);
+    /* background-image: url(img/back.jpg); */
+    background-repeat: no-repeat;
+}
+
+.heading1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.heading1 h1{
+    padding-top: 30px;
+    font-family: cursive;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.maincertificate{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px;
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+}    
+
+.mycertificate{
+    padding: 12px;
+    /* display: inline-block; */
+}
+
+.mycertificate img{
+    height: 100%;
+    width: 40vw;
+}
+
+.mycertificate .firstcertificate{
+    height: 100%;
+    width: 40vw;
+}
+
+
+/* footer style0 */
+
+.myfooter{
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+}
+
+.myfooter span{
+    font-size: 16px;
+   font-family: cursive;    
+}
+
+
+
+
+/* Restponsive Design */
+
+@media(max-width:1020px)
+{
+    .mypic img{
+       height: 380px;
+    }
+
+    .myname h3{
+        font-size: 12px;
+    }
+
+    .myname h2{
+        font-size: 20px;
+    }
+
+    .myname button{
+        font-size: 11px;
+    }
+
+    .heading1 h1{
+      font-size: 23px;
+    }
+
+    .myfooter span{
+        font-size: 11px;
+    } 
+    
+    .main ul li a{
+        font-size: 10px;
+    }
+
+}
+
+
+@media(max-width:810px)
+{
+
+    .mypic img{
+        height: 335px;
+     }
+ 
+     
+     .myname h1{
+          font-size: 24px;
+     }
+
+     .myname h2{
+          font-size: 21px;
+     }
+
+    .myname h3{
+            font-size: 11px;
+    }
+        
+    .myname button{
+        font-size: 12px;
+    }
+           
+    .sec-3{
+        height: 180vh;
+    }
+
+}
+
+@media (max-width:668px) {
+    
+    .main ul li a{
+        padding: 18px;
+    }
+
+    .mypic img{
+        height: 280px;
+    }
+
+}
+
+@media (max-width:553px) {
+    
+    .main ul li a{
+        padding: 18px;
+    }
+
+    .mypic img{
+        height: 250px;
+    }
+
+    .myname button{
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width:360px) {
+
+    .sec-1{
+        height: 80vh;
+    }
+    .main ul li a{
+        padding: 18px;
+    }
+
+    .mypic img{
+        height: 220px;
+    }
+
+    .myname button{
+        font-size: 9px;
+    }
+
+}
